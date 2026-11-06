@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infitej Technologies — Custom Software Engineering & Autonomous QA</title>
+  <meta name="description" content="Infitej engineers high-performance web, mobile, and cloud software—backed by autonomous testing agents that eliminate bugs before they reach your users.">
+  
+  <!-- Favicon using the Infitej logo -->
+  <link rel="icon" type="image/png" href="assets/infitej-logo.png">
+
+  <!-- Main Stylesheet (Luxury Navy, Cream & Coral) -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Native ES Module Import Map for Three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.js",
+      "three/addons/": "./vendor/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       MASTER FULL-VIEWPORT LIQUID WEBGL CANVAS
+       Custom GPU liquid caustics, vertical fluted glass refraction, and
+       physical 3D glass & coral Infinity Möbius emblem.
+       ======================================================================== -->
+  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+
+  <div class="site-content-wrapper">
+    <!-- ======================================================================
+         FLOATING GLASSMORHIC HEADER
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="header-container">
+        <a href="#" class="brand-link" aria-label="Infitej Home">
+          <img src="assets/infitej-logo.png" alt="Infitej Technologies" class="brand-logo">
+        </a>
+
+        <nav class="header-nav" aria-label="Primary Navigation">
+          <a href="#lab" class="nav-link"><small>01</small> Quality Lab</a>
+          <a href="#accelerators" class="nav-link"><small>02</small> Services & Accelerators</a>
+          <a href="#ecosystem" class="nav-link"><small>03</small> Architecture</a>
+          <a href="#lifecycle" class="nav-link"><small>04</small> Engineering Process</a>
+          <a href="#comparison" class="nav-link"><small>05</small> Why Infitej</a>
+        </nav>
+
+        <div class="header-utilities">
+          <div class="live-hub-badge" title="Operational Clock">
+            <span class="live-indicator-dot"></span>
+            <span id="live-hub-time">16:40:00 UTC</span>
+          </div>
+          <a href="#audit" class="btn-coral">Request Architecture Audit →</a>
+          <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ====================================================================
+           HERO SECTION: LIQUID DISPLAY & 3D GLASS CORE
+           ==================================================================== -->
+      <section id="hero" class="hero-section">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span>✦</span> SOFTWARE PRODUCT ENGINEERING & AUTONOMOUS QUALITY ASSURANCE
+            </div>
+            <h1 class="hero-headline">
+              We build software that scales.<br>
+              <span class="hero-headline-coral">And autonomous testing that ensures it never fails.</span>
+            </h1>
+            <p class="hero-subheadline">
+              Infitej designs, develops, and deploys high-performance web, mobile, and cloud software—backed by intelligent, self-healing test automation that catches bugs before they reach your users.
+            </p>
+            <p class="hero-body">
+              Whether you are launching a custom product from the ground up or modernizing an enterprise cloud platform, we unite full-stack software development with autonomous AI testing. You get fast feature delivery, zero regression debt, and rock-solid software stability from day one.
+            </p>
+            <div class="hero-ctas">
+              <a href="#audit" class="btn-coral">Schedule Architecture & QA Audit →</a>
+              <a href="#accelerators" class="btn-glass">Explore Engineering Services ↓</a>
+            </div>
+
+            <!-- Core Engineering Pillars -->
+            <div class="hero-pillars-row">
+              <div class="pillar-item">
+                <span class="pillar-label">Full-Stack Development</span>
+                <span class="pillar-desc">Custom web, mobile, and cloud platforms engineered for speed, scale, and security.</span>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-label">Autonomous QA Automation</span>
+                <span class="pillar-desc">Intelligent testing agents that adapt to UI changes and slash regression cycles by up to 90%.</span>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-label">90-Day RapidLaunch MVP</span>
+                <span class="pillar-desc">Production-grade application delivered on time with day-one CI/CD and zero rewrite debt.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Capabilities Marquee -->
+      <div class="marquee-container" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-item">Custom Software Product Engineering <span>✦</span></div>
+          <div class="marquee-item">Autonomous QA & Test Automation <span>✦</span></div>
+          <div class="marquee-item">Cloud DevOps & CI/CD Pipelines <span>✦</span></div>
+          <div class="marquee-item">Web, Mobile & Cross-Platform Apps <span>✦</span></div>
+          <div class="marquee-item">Self-Healing Test Locators <span>✦</span></div>
+          <div class="marquee-item">Enterprise SaaS & Zoho One Integration <span>✦</span></div>
+          <div class="marquee-item">90-Day RapidLaunch MVP <span>✦</span></div>
+          <div class="marquee-item">Shift-Left Unit & API Quality Gates <span>✦</span></div>
+          <!-- Duplicate for seamless infinite loop -->
+          <div class="marquee-item">Custom Software Product Engineering <span>✦</span></div>
+          <div class="marquee-item">Autonomous QA & Test Automation <span>✦</span></div>
+          <div class="marquee-item">Cloud DevOps & CI/CD Pipelines <span>✦</span></div>
+          <div class="marquee-item">Web, Mobile & Cross-Platform Apps <span>✦</span></div>
+          <div class="marquee-item">Self-Healing Test Locators <span>✦</span></div>
+          <div class="marquee-item">Enterprise SaaS & Zoho One Integration <span>✦</span></div>
+          <div class="marquee-item">90-Day RapidLaunch MVP <span>✦</span></div>
+          <div class="marquee-item">Shift-Left Unit & API Quality Gates <span>✦</span></div>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           / 01 MEASURABLE ENGINEERING IMPACT
+           ==================================================================== -->
+      <section id="metrics" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 01 Measurable Engineering Impact</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Engineered to Eliminate Defect Debt</h2>
+            <p class="section-desc">
+              When quality assurance is built directly into development, teams release software 3x faster without midnight emergency hotfixes.
+            </p>
+          </div>
+
+          <div class="metrics-grid-4">
+            <div class="metric-card">
+              <div class="metric-header">REGRESSION CYCLE TIME</div>
+              <div class="metric-value coral">Up to 90% Faster</div>
+              <div class="metric-detail">Autonomous testing agents run parallel regression suites in minutes instead of days of manual testing.</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-header">EARLY DEFECT PREVENTION</div>
+              <div class="metric-value">60% Cost Reduction</div>
+              <div class="metric-detail">Catching flaws during code commit rather than post-launch saves tens of thousands in hotfix firefighting.</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-header">TEST RELIABILITY</div>
+              <div class="metric-value coral">99.8% Precision</div>
+              <div class="metric-detail">Self-healing locators and multi-attribute element mapping eliminate false-positive test failures.</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-header">RAPIDLAUNCH MVP</div>
+              <div class="metric-value">90 Days</div>
+              <div class="metric-detail">Fully functional, scalable production application delivered on time with day-one CI/CD and embedded quality gates.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 02 AUTONOMOUS AI TESTING LAB & 5-LAYER STACK
+           ==================================================================== -->
+      <section id="lab" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 02 Autonomous Quality Lab</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Intelligent Testing That Adapts to Your Code</h2>
+            <p class="section-desc">
+              Interactive demonstration of our autonomous QA engine. See how testing agents interpret user workflows, heal broken selectors automatically when your UI updates, and validate complex application behaviors.
+            </p>
+          </div>
+
+          <div class="lab-layout">
+            <!-- Left: Interactive Simulation Panel -->
+            <div class="lab-panel-box">
+              <h3 class="lab-panel-title">Autonomous Execution Engine</h3>
+              <p class="lab-panel-desc">
+                Select an execution mode below to simulate how our autonomous agents interpret user journeys and remediate frontend selector changes:
+              </p>
+              
+              <div class="lab-control-bar" role="group" aria-label="Lab Modes">
+                <button class="lab-mode-btn active" data-mode="mode1">Mode 1: Automated Test Authoring</button>
+                <button class="lab-mode-btn" data-mode="mode2">Mode 2: Cross-Browser & Device QA</button>
+                <button class="lab-mode-btn" data-mode="mode3">Mode 3: Self-Healing Test Engine</button>
+              </div>
+
+              <div class="lab-terminal" id="lab-terminal-output" aria-live="polite">
+                <div class="terminal-line"><span class="terminal-tag">[SYSTEM]</span> Autonomous Quality Engine initialized.</div>
+                <div class="terminal-line"><span class="terminal-tag">[MODE-1]</span> Test Authoring: Ingesting user stories, API schemas, and component trees.</div>
+              </div>
+            </div>
+
+            <!-- Right: The 5 Layers of AI Quality -->
+            <div class="stack-accordion">
+              <div class="stack-layer-card active">
+                <div class="stack-layer-header">
+                  <div class="layer-title-box">
+                    <span class="layer-code">L1</span>
+                    <span class="layer-name">Data Integrity & API Contracts</span>
+                  </div>
+                  <span class="layer-chevron">▼</span>
+                </div>
+                <div class="stack-layer-body">
+                  Validates dataset schema integrity, API payloads, token distribution consistency, and vector database grounding prior to production requests.
+                </div>
+              </div>
+
+              <div class="stack-layer-card">
+                <div class="stack-layer-header">
+                  <div class="layer-title-box">
+                    <span class="layer-code">L2</span>
+                    <span class="layer-name">Functional Workflows & User Journeys</span>
+                  </div>
+                  <span class="layer-chevron">▼</span>
+                </div>
+                <div class="stack-layer-body">
+                  Validates complete end-to-end user journeys—from authentication and multi-step onboarding to checkout and external webhook synchronization.
+                </div>
+              </div>
+
+              <div class="stack-layer-card">
+                <div class="stack-layer-header">
+                  <div class="layer-title-box">
+                    <span class="layer-code">L3</span>
+                    <span class="layer-name">Visual & Cross-Device Fidelity</span>
+                  </div>
+                  <span class="layer-chevron">▼</span>
+                </div>
+                <div class="stack-layer-body">
+                  Simultaneous visual rendering and layout checks across desktop monitors, tablets, and real iOS and Android mobile viewports.
+                </div>
+              </div>
+
+              <div class="stack-layer-card">
+                <div class="stack-layer-header">
+                  <div class="layer-title-box">
+                    <span class="layer-code">L4</span>
+                    <span class="layer-name">AI & Model Behavioral Reliability</span>
+                  </div>
+                  <span class="layer-chevron">▼</span>
+                </div>
+                <div class="stack-layer-body">
+                  Probes generative AI and LLM outputs against factual reference documentation, eliminating hallucinations and adversarial injection vectors.
+                </div>
+              </div>
+
+              <div class="stack-layer-card">
+                <div class="stack-layer-header">
+                  <div class="layer-title-box">
+                    <span class="layer-code">L5</span>
+                    <span class="layer-name">Performance, Load & Security Governance</span>
+                  </div>
+                  <span class="layer-chevron">▼</span>
+                </div>
+                <div class="stack-layer-body">
+                  End-to-end latency profiling, stress testing up to 1M req/s, OWASP security baselines, and complete audit trail logging for compliance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 03 PROPRIETARY ENGINEERING & QA ACCELERATORS
+           ==================================================================== -->
+      <section id="accelerators" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 03 Engineering Frameworks</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Proven Frameworks for Software & QA Delivery</h2>
+            <p class="section-desc">
+              We leverage structured, reusable engineering frameworks to build and test software faster with consistent, predictable outcomes.
+            </p>
+          </div>
+
+          <div class="bento-grid">
+            <!-- 01 FastTrack -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">01 / FRAMEWORK</span>
+                <span class="bento-category-tag">Automation</span>
+              </div>
+              <h3 class="bento-title">Infitej FastTrack™</h3>
+              <div class="bento-subtitle">Hybrid Test Automation Engine</div>
+              <p class="bento-description">
+                Unifies Playwright, Cypress, Selenium, Appium, and RestAssured with low-code accelerators and self-healing locators across Web, Mobile, and API.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">50–99% Velocity</span>
+                <span class="bento-stat-label">Faster test execution across distributed cloud farms</span>
+              </div>
+            </div>
+
+            <!-- 02 RapidLaunch -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">02 / FRAMEWORK</span>
+                <span class="bento-category-tag">Product Engineering</span>
+              </div>
+              <h3 class="bento-title">Infitej RapidLaunch™</h3>
+              <div class="bento-subtitle">90-Day MVP & Scale Architecture</div>
+              <p class="bento-description">
+                Full-cycle custom software product engineering delivered across 3 structured checkpoints: Align (W1–2), Build (W3–10), and Launch (W11–13) with embedded QA gates.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">90 Days</span>
+                <span class="bento-stat-label">Production build with day-one CI/CD & observability</span>
+              </div>
+            </div>
+
+            <!-- 03 SuiteSync -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">03 / FRAMEWORK</span>
+                <span class="bento-category-tag">Enterprise SaaS</span>
+              </div>
+              <h3 class="bento-title">Infitej SuiteSync™</h3>
+              <div class="bento-subtitle">Zoho One & CRM/ERP Architecture</div>
+              <p class="bento-description">
+                End-to-end multi-app enterprise architecture (Zoho One, Salesforce, ERP/CRM), custom Deluge low-code extensions, and cross-system regression testing.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">Zero Data Silos</span>
+                <span class="bento-stat-label">Unified business data flow with automated API verification</span>
+              </div>
+            </div>
+
+            <!-- 04 BugBuster -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">04 / FRAMEWORK</span>
+                <span class="bento-category-tag">Backlog Pods</span>
+              </div>
+              <h3 class="bento-title">Infitej BugBuster™</h3>
+              <div class="bento-subtitle">Dedicated Defect Remediation Pods</div>
+              <p class="bento-description">
+                Dedicated QA and engineering pods operating in parallel with internal dev teams, squashing legacy defect backlogs with zero sprint disruption.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">Zero Sprint Overlap</span>
+                <span class="bento-stat-label">Dedicated pods protecting primary feature roadmap sprints</span>
+              </div>
+            </div>
+
+            <!-- 05 CodeProbe -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">05 / FRAMEWORK</span>
+                <span class="bento-category-tag">Shift-Left Unit QA</span>
+              </div>
+              <h3 class="bento-title">Infitej CodeProbe™</h3>
+              <div class="bento-subtitle">Commit-Time Unit & API Harnesses</div>
+              <p class="bento-description">
+                Ready-to-deploy unit testing harnesses for Java, Python, TypeScript, and .NET integrated with JUnit, PyTest, Mocha, and GitHub Actions with flaky-test detection.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">Commit-Level Gates</span>
+                <span class="bento-stat-label">Intercepting regressions before code merges to main</span>
+              </div>
+            </div>
+
+            <!-- 06 OmniStream -->
+            <div class="bento-card">
+              <div class="bento-badge-row">
+                <span class="bento-index">06 / FRAMEWORK</span>
+                <span class="bento-category-tag">Cross-Screen & Devices</span>
+              </div>
+              <h3 class="bento-title">Infitej OmniStream™</h3>
+              <div class="bento-subtitle">Cross-Screen OTT & Mobile Automation</div>
+              <p class="bento-description">
+                Unified cross-screen testing across 9 platforms (Android, iOS, Web, Apple TV, Fire TV, Roku, Tizen, WebOS) plus industrial simulation QA.
+              </p>
+              <div class="bento-stat-box">
+                <span class="bento-stat-num">Write Once</span>
+                <span class="bento-stat-label">Run everywhere across desktop, mobile, and television OS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 04 CONCENTRIC QUALITY ECOSYSTEM
+           ==================================================================== -->
+      <section id="ecosystem" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 04 Quality Architecture</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">The Five Dimensions of Software Reliability</h2>
+            <p class="section-desc">
+              Quality is not a final inspection before launch—it is an architectural discipline embedded throughout the entire engineering process.
+            </p>
+          </div>
+
+          <div class="concentric-layout">
+            <div class="concentric-stage-box">
+              <svg class="concentric-svg" viewBox="0 0 500 500">
+                <circle cx="250" cy="250" r="230" class="concentric-ring" data-ring="4"></circle>
+                <circle cx="250" cy="250" r="185" class="concentric-ring" data-ring="3"></circle>
+                <circle cx="250" cy="250" r="140" class="concentric-ring" data-ring="2"></circle>
+                <circle cx="250" cy="250" r="95" class="concentric-ring" data-ring="1"></circle>
+                <circle cx="250" cy="250" r="50" class="concentric-ring active" data-ring="0"></circle>
+              </svg>
+            </div>
+
+            <div class="concentric-info-box">
+              <div class="concentric-ring-pills">
+                <button class="ring-select-pill active" data-idx="0">Ring I: Product Clarity</button>
+                <button class="ring-select-pill" data-idx="1">Ring II: Code Integrity</button>
+                <button class="ring-select-pill" data-idx="2">Ring III: Automation Cloud</button>
+                <button class="ring-select-pill" data-idx="3">Ring IV: DevOps Gates</button>
+                <button class="ring-select-pill" data-idx="4">Ring V: Quality Culture</button>
+              </div>
+              <h3 id="concentric-active-title" class="concentric-active-title">Ring I · Product Clarity & User Journey Mapping</h3>
+              <p id="concentric-active-desc" class="concentric-active-desc">
+                Quality begins before code is written. We establish clear acceptance criteria, edge-case definitions, and measurable business KPIs with product stakeholders.
+              </p>
+              <ul id="concentric-specs-list" class="concentric-specs-list">
+                <li class="concentric-specs-item"><span class="specs-check">✓</span> User story acceptance criteria validation & ambiguity scoring</li>
+                <li class="concentric-specs-item"><span class="specs-check">✓</span> Direct alignment with Product Managers & Domain Experts</li>
+                <li class="concentric-specs-item"><span class="specs-check">✓</span> Measurable business KPI impact projection for automated test suites</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 05 THE 6-PHASE VERIFICATION LIFECYCLE
+           ==================================================================== -->
+      <section id="lifecycle" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 05 Verification Lifecycle</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Our 6-Phase Engineering & Quality Process</h2>
+            <p class="section-desc">
+              From initial architecture blueprinting to automated release gates and live telemetry, here is how we ensure your software never fails.
+            </p>
+          </div>
+
+          <div class="lifecycle-shell">
+            <div class="lifecycle-header-row">
+              <div class="dial-prompt">
+                <span>DRAG DIAL OR USE ARROWS</span> · 01 / 06
+              </div>
+            </div>
+
+            <div class="lifecycle-dial-grid">
+              <!-- Radial Dial -->
+              <div class="dial-controller-container">
+                <div id="interactive-scrub-dial" class="interactive-dial" title="Drag to scrub through phases">
+                  <svg viewBox="0 0 200 200" width="100%" height="100%">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"></circle>
+                    <g id="dial-rotate-group" style="transform-origin: 100px 100px; transition: transform 0.3s ease;">
+                      <circle cx="100" cy="10" r="10" fill="#FF6B50"></circle>
+                      <line x1="100" y1="100" x2="100" y2="10" stroke="#FF6B50" stroke-width="3"></line>
+                    </g>
+                  </svg>
+                  <div class="dial-center-badge">
+                    <span id="dial-phase-num" class="dial-phase-num">01</span>
+                    <span class="dial-phase-sub">PHASE</span>
+                  </div>
+                </div>
+                <div class="dial-indicators">
+                  <span class="dial-step-dot active" data-step="0"></span>
+                  <span class="dial-step-dot" data-step="1"></span>
+                  <span class="dial-step-dot" data-step="2"></span>
+                  <span class="dial-step-dot" data-step="3"></span>
+                  <span class="dial-step-dot" data-step="4"></span>
+                  <span class="dial-step-dot" data-step="5"></span>
+                </div>
+              </div>
+
+              <!-- Phase Details -->
+              <div class="lifecycle-display-box">
+                <div>
+                  <div id="phase-step-tag" class="lifecycle-step-tag">PHASE 01 / 06</div>
+                  <h3 id="phase-title" class="lifecycle-phase-title">Architecture Blueprinting & Requirements Blueprints</h3>
+                  <p id="phase-desc" class="lifecycle-phase-desc">
+                    Requirements validation via structured checklists, application architecture inspection, and technical alignment before writing code.
+                  </p>
+                </div>
+
+                <div class="lifecycle-footer-meta">
+                  <span style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);">EMBEDDED QUALITY GATES FROM DAY ONE</span>
+                  <div class="lifecycle-nav-arrows">
+                    <button id="dial-prev-btn" class="dial-arrow-btn" aria-label="Previous phase">←</button>
+                    <button id="dial-next-btn" class="dial-arrow-btn" aria-label="Next phase">→</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 06 COMPARATIVE MODEL: MODERN STANDARD VS TRADITIONAL IT
+           ==================================================================== -->
+      <section id="comparison" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 06 Why Infitej</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">The Infitej Standard vs. Traditional IT Outsourcing</h2>
+            <p class="section-desc">
+              Explore 5 fundamental engineering distinctions separating modern autonomous quality from commoditized body-shop consulting.
+            </p>
+          </div>
+
+          <div class="slider-shell">
+            <div class="slider-top-bar">
+              <span id="slider-counter" class="slider-counter">01 / 05</span>
+              <div class="slider-controls">
+                <button id="slider-prev-btn" class="slider-nav-btn" aria-label="Previous slide">←</button>
+                <button id="slider-next-btn" class="slider-nav-btn" aria-label="Next slide">→</button>
+                <button id="slider-skip-btn" class="slider-skip-btn">Skip to End →</button>
+              </div>
+            </div>
+
+            <div class="slider-comparison-box">
+              <div class="comparison-col traditional">
+                <span class="comparison-badge bad">Traditional IT Outsourcing</span>
+                <h3 id="comp-trad-title" class="comparison-title">Brittle Manual Test Scripts</h3>
+                <p id="comp-trad-desc" class="comparison-text">
+                  Legacy Selenium or Cypress scripts break whenever frontend engineers alter element IDs, CSS hierarchies, or DOM structures, creating an unsustainable maintenance overhead.
+                </p>
+                <div id="comp-trad-impact" class="comparison-impact" style="color: #F87171;">
+                  High maintenance debt; up to 40% of QA hours lost to repairing broken locators.
+                </div>
+              </div>
+
+              <div class="comparison-col infitej">
+                <span class="comparison-badge good">Infitej Modern Standard</span>
+                <h3 id="comp-infi-title" class="comparison-title">Intent-Driven Self-Healing Testing Agents</h3>
+                <p id="comp-infi-desc" class="comparison-text">
+                  Autonomous agents execute natural-language business intent dynamically. Multi-attribute Computer Vision & DOM graphs update locators in real time without human intervention.
+                </p>
+                <div id="comp-infi-impact" class="comparison-impact" style="color: var(--coral-soft);">
+                  Eliminates selector maintenance; slashes test execution cycles by up to 90%.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 07 MATURITY-STAGE ROADMAPPING
+           ==================================================================== -->
+      <section id="maturity" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 07 Tailored Engagement</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Engineered for Startups and Growing Enterprises</h2>
+            <p class="section-desc">
+              Whether you need a high-velocity team to build your initial MVP or dedicated QA pods to support enterprise scale, we fit your exact stage.
+            </p>
+          </div>
+
+          <div class="maturity-layout">
+            <div>
+              <div class="perspective-toggle" role="group" aria-label="Perspective Switcher">
+                <button class="perspective-btn active" data-track="startup">The Startup Way</button>
+                <button class="perspective-btn" data-track="enterprise">The Enterprise Way</button>
+              </div>
+              <div id="scrubber-steps-container" class="scrubber-steps"></div>
+            </div>
+
+            <div class="delivery-overview-box">
+              <h3 style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; margin-bottom: 14px; color: var(--text-cream);">
+                Built for Scalable Engineering
+              </h3>
+              <p style="font-size: 14px; color: var(--text-slate); line-height: 1.7; margin-bottom: 24px;">
+                Whether you are launching your first production MVP or modernizing complex multi-application enterprise systems, Infitej provides structured, IP-backed engineering frameworks.
+              </p>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--text-cream-soft);">
+                <li><strong style="color: var(--coral-primary);">✓ Outcome-Driven Contracts:</strong> Transparent milestones with zero billable-headcount lock-in.</li>
+                <li><strong style="color: var(--coral-primary);">✓ Production Observability:</strong> Full metrics, tracing, and automated regression suites.</li>
+                <li><strong style="color: var(--coral-primary);">✓ Shift-Left Culture:</strong> Empowering developers with automated quality gates from day one.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           / 08 CONVERSION & ARCHITECTURE AUDIT
+           ==================================================================== -->
+      <section id="audit" class="site-section">
+        <div class="section-container">
+          <div class="section-prefix">/ 08 Get Started</div>
+          <div class="section-heading-box">
+            <h2 class="section-title">Schedule an Architecture & QA Consultation</h2>
+            <p class="section-desc">
+              Speak directly with a senior engineering architect. We will review your product requirements, code repository, or testing bottlenecks and provide an actionable roadmap.
+            </p>
+          </div>
+
+          <div class="conversion-split-container">
+            <!-- Information & Focus -->
+            <div class="audit-pitch-box">
+              <div>
+                <h3 style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--text-cream); margin-bottom: 16px;">
+                  Direct Senior Technical Evaluation
+                </h3>
+                <p style="font-size: 14px; color: var(--text-slate); line-height: 1.7; margin-bottom: 24px;">
+                  No aggressive sales scripts. An engineering architect reviews your current technology stack, regression pain points, and product roadmap.
+                </p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--text-cream-soft);">
+                  <li><strong style="color: var(--coral-primary);">✓ Honest Architectural Assessment:</strong> Concrete recommendations for test automation and CI/CD pipelines.</li>
+                  <li><strong style="color: var(--coral-primary);">✓ Flexible Engagement Models:</strong> PoC, Dedicated Pod, Fixed Price, Hybrid, Managed QA, or Senior Advisory.</li>
+                  <li><strong style="color: var(--coral-primary);">✓ Actionable Project Brief:</strong> Instantly download your project specifications as a formatted document.</li>
+                </ul>
+              </div>
+
+              <div class="audit-lead-card">
+                <div class="audit-card-title">Focused 2-Week AI Quality Sprint</div>
+                <p class="audit-card-desc">
+                  Developing generative AI or RAG workflows? Our focused assessment probes your model's behavioral consistency, context accuracy, and adversarial safety.
+                </p>
+              </div>
+            </div>
+
+            <!-- Form with Instant Brief Download -->
+            <form id="audit-request-form" class="conversion-form">
+              <div class="form-group">
+                <label for="lead-name" class="form-label">Full Name</label>
+                <input type="text" id="lead-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-email" class="form-label">Work Email</label>
+                <input type="email" id="lead-email" name="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Engagement Focus</label>
+                <select name="track" class="form-select">
+                  <option value="architecture-audit">Architecture & QA Verification Audit</option>
+                  <option value="rapid-launch">90-Day MVP Engineering (RapidLaunch™)</option>
+                  <option value="qa-automation">Autonomous QA & Regression Automation (FastTrack™)</option>
+                  <option value="enterprise-sync">Zoho One & Enterprise SaaS Integration (SuiteSync™)</option>
+                  <option value="ai-assessment">2-Week AI Quality Assessment</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred Commercial Model</label>
+                <div class="engagement-models-selector">
+                  <span class="model-radio-pill" data-model="PoC">Proof of Concept</span>
+                  <span class="model-radio-pill active" data-model="Dedicated Pod">Dedicated Pod</span>
+                  <span class="model-radio-pill" data-model="Managed QA">Managed QA</span>
+                  <span class="model-radio-pill" data-model="Fixed-Scope Build">Fixed-Scope Build</span>
+                  <span class="model-radio-pill" data-model="CTO Advisory">Advisory</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-scope" class="form-label">Project Scope & Primary Goals</label>
+                <textarea id="lead-scope" name="scope" class="form-textarea" rows="3" placeholder="Tell us about your application, current test suite, or software engineering goals..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-coral" style="width: 100%; border-radius: var(--radius-sm);">
+                Download Project Brief & Request Audit →
+              </button>
+              <div id="form-status-msg" class="form-status-msg"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================
+         / 09 FOOTER & ONE-CLICK AI SUMMARY BAR
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="section-container">
+        <!-- One-Click AI Summary Bar -->
+        <div class="ai-summary-bar">
+          <div class="ai-summary-text">
+            <span style="font-size: 18px; color: var(--coral-primary);">✦</span>
+            <span>Instant AI Briefing: Summarize Infitej’s engineering capabilities with one click:</span>
+          </div>
+          <div class="ai-summary-buttons">
+            <button id="ai-btn-chatgpt" class="ai-summary-btn" title="Open executive prompt in ChatGPT">
+              Summarize with ChatGPT ↗
+            </button>
+            <button id="ai-btn-claude" class="ai-summary-btn" title="Open executive prompt in Claude">
+              Summarize with Claude ↗
+            </button>
+            <button id="ai-btn-perplexity" class="ai-summary-btn" title="Open executive prompt in Perplexity">
+              Summarize with Perplexity ↗
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Column Directory with Superscript Counters -->
+        <div class="footer-nav-grid">
+          <div>
+            <h4 class="footer-col-title">01 Autonomous QA & Testing<sup>8</sup></h4>
+            <ul class="footer-links-list">
+              <li><a href="#accelerators">Infitej FastTrack™ (Hybrid Suite)</a></li>
+              <li><a href="#lab">Self-Healing Locators</a></li>
+              <li><a href="#lab">Multi-Modal Computer Vision QA</a></li>
+              <li><a href="#accelerators">CodeProbe™ Unit Test Harness</a></li>
+              <li><a href="#accelerators">OmniStream™ Cross-Screen QA</a></li>
+              <li><a href="#lab">5-Layer AI Quality Stack</a></li>
+              <li><a href="#lifecycle">Performance & Usability Audits</a></li>
+              <li><a href="#lifecycle">API Contract Verification</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">02 Software Engineering<sup>6</sup></h4>
+            <ul class="footer-links-list">
+              <li><a href="#accelerators">RapidLaunch™ (90-Day MVP)</a></li>
+              <li><a href="#accelerators">SuiteSync™ (Zoho One & CRM/ERP)</a></li>
+              <li><a href="#accelerators">BugBuster™ (Backlog Pods)</a></li>
+              <li><a href="#ecosystem">Cloud DevOps & Release Gates</a></li>
+              <li><a href="#ecosystem">Full-Stack Web & Mobile Apps</a></li>
+              <li><a href="#ecosystem">Zero-Data-Silo Architecture</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">03 Engagement Models<sup>5</sup></h4>
+            <ul class="footer-links-list">
+              <li><a href="#audit">Proof of Concept (PoC)</a></li>
+              <li><a href="#audit">Dedicated Engineering Pods</a></li>
+              <li><a href="#audit">Fixed-Scope Milestone Delivery</a></li>
+              <li><a href="#audit">Managed Quality Services</a></li>
+              <li><a href="#audit">CTO & Architecture Advisory</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">04 Technical Standards<sup>5</sup></h4>
+            <ul class="footer-links-list">
+              <li><a href="#lab">Shift-Left Quality Governance</a></li>
+              <li><a href="#lab">OWASP Security Guidelines</a></li>
+              <li><a href="#accelerators">Full-Stack CI/CD Integration</a></li>
+              <li><a href="#lab">Multi-Turn AI Consistency</a></li>
+              <li><a href="#ecosystem">Zero-Defect Release Velocity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Brand Lockup & Copyright -->
+        <div class="footer-bottom-row">
+          <div class="footer-brand-lockup">
+            <img src="assets/infitej-logo.png" alt="Infitej Technologies" class="footer-logo">
+            <span>© 2026 Infitej Technologies. Infinite Quality | Intelligent Testing.</span>
+          </div>
+          <div>
+            <a href="#" id="back-to-top" class="back-to-top-btn">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Application Script -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
